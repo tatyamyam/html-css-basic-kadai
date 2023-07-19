@@ -1,0 +1,97 @@
+h1 {
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(193, 234, 251);
+}
+
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+
+
+header {
+  padding-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+main {
+  padding: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  #parent {
+    display: block;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 25px;
+    }
+  }
+}
+
+.contents {
+  border: solid 3px rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+}
+
+.contents p:nth-child(3)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+.contents img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 70%;
+}
+
+h2 {
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
