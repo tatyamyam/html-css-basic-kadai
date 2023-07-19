@@ -7,9 +7,14 @@ body {
   margin: 0;
 }
 
-p {
+.contents p {
   margin: 0;
   font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .contents p {
+    font-size: 25px;
+  }
 }
 
 a {
@@ -41,16 +46,19 @@ main {
   display: flex;
   justify-content: space-around;
 }
-
 @media screen and (max-width: 768px) {
   #parent {
     display: block;
-    h2 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 25px;
-    }
+  }
+}
+
+.contents h2 {
+  font-size: 25px;
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+@media screen and (max-width: 768px) {
+  .contents h2 {
+    font-size: 30px;
   }
 }
 
@@ -81,10 +89,6 @@ main {
   width: 70%;
 }
 
-h2 {
-  font-size: 25px;
-  border-bottom: dotted 3px rgb(236, 122, 122);
-}
 
 h2::before {
   content: "●";
